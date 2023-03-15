@@ -3,12 +3,6 @@ import {NextRouter, useRouter} from 'next/router';
 
 export default function index() {
     const router: NextRouter = useRouter();
-    // const liList = [
-    //     'Home',
-    //     'Product',
-    //     'Detail',
-    //     'About'
-    // ];
 
     const [list, setList] = useState([
         {
@@ -18,7 +12,15 @@ export default function index() {
         {
             href: '/about',
             name: 'About',
-        }
+        },
+        {
+            href: '/detail',
+            name: 'Details',
+        },
+        {
+            href: '/login',
+            name: 'Login',
+        },
     ]);
 
   return (

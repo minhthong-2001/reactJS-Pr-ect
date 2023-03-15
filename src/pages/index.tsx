@@ -1,9 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
-import Nav from '@/components/Navigate';
 import BodyContent from '@/components/BodyContent/index';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -16,10 +13,7 @@ export default function Home() {
         />
       </Head>
       
-      <Nav />
-      <Header />
       <BodyContent/>
-      <Footer />
     </div>
   );
 }
